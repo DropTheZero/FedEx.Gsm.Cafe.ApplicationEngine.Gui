@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+body {
+   background-color: _BACKGROUND_COLOR_;
+}
+* {
+	font-family: Microsoft Sans Serif, Arial, Helvetica;
+	font-size: 8.25pt;
+}
+table,th,td,tr {
+	border: none;
+}
+th {
+	text-align: left;
+	text-decoration: underline;
+}
+td {
+	vertical-align: top;
+}
+</style>
+</head>
+<body>
+<table>
+   <tr>
+      <th width="75" scope="col">Level</th>
+      <th width="109" scope="col">Usage</th>
+   </tr>
+   <tr>
+      <td>Critical (1)</td>
+      <td>For information that <em>must</em> be logged. This level will always be logged. </td>
+   </tr>
+   <tr>
+      <td>Error (2)</td>
+      <td>For software errors: edit or unexpected. Most likely will accompany displaying an error to the user. The displayed error can refer the user to the log for more information. </td>
+   </tr>
+   <tr>
+      <td>Warning (3) </td>
+      <td>For informational purposes. Non-error conditions but something that might affect something or would be helpful for debugging. </td>
+   </tr>
+   <tr>
+      <td>Info (4) </td>
+      <td>Informational only. Non-error and non-warning conditions. </td>
+   </tr>
+   <tr>
+      <td>Verbose (5) </td>
+      <td>Informational only. One more level of non-error and non-warning informational logging. </td>
+   </tr>
+   <tr>
+      <td>Debug (6) </td>
+      <td>Set for full logging. All levels will be logged. Do not leave anything at this level in production unless you are trying to debug a problem. </td>
+   </tr>
+</table>
+</body>
+</html>

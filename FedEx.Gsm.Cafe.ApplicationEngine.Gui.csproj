@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\FedEx\ShipManager\BIN\FedEx.Gsm.Cafe.ApplicationEngine.Gui.exe-->
+  <Import Project="packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\build\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\build\Microsoft.CodeAnalysis.Analyzers.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AB14EB3-F6EB-4F9C-A51D-B4206D95E5EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>FedEx.Gsm.Cafe.ApplicationEngine.Gui</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>38.55.1083.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>FedEx.Gsm.Cafe.ApplicationEngine.Gui</RootNamespace>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Controller">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Controller.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.BackupRestore">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.BackupRestore.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.CommandManager">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.CommandManager.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.Data">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.DatabaseForms">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.DatabaseForms.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.Eventing">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.Eventing.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.HTML">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.HTML.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.Integration">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.LabelDataComponents">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.LabelDataComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.Plugins">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.Shared">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.ShipModule">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.ShipModule.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.UploadDownload">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.UploadDownload.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.UserControls">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.UserControls.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.Utilities">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.UtilityFunctions">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.UtilityFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Gui.ValidatorCustomLabel">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Gui.ValidatorCustomLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Cafe.ApplicationEngine.Integration">
+      <HintPath>lib\FedEx.Gsm.Cafe.ApplicationEngine.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Common.ConfigManager">
+      <HintPath>lib\FedEx.Gsm.Common.ConfigManager.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Common.Integration">
+      <HintPath>lib\FedEx.Gsm.Common.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Common.Languafier">
+      <HintPath>lib\FedEx.Gsm.Common.Languafier.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Common.Logging">
+      <HintPath>lib\FedEx.Gsm.Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.Common.Parser.CTS">
+      <HintPath>lib\FedEx.Gsm.Common.Parser.CTS.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.ShipEngine.CommApi.CommStatusDialog">
+      <HintPath>lib\FedEx.Gsm.ShipEngine.CommApi.CommStatusDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.ShipEngine.DataAccess">
+      <HintPath>lib\FedEx.Gsm.ShipEngine.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.ShipEngine.Entities">
+      <HintPath>lib\FedEx.Gsm.ShipEngine.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.Gsm.ShipEngine.Reports.ReportLogic">
+      <HintPath>lib\FedEx.Gsm.ShipEngine.Reports.ReportLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="FedEx.PluginManagement">
+      <HintPath>lib\FedEx.PluginManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Humanizer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=979442b78dfc278e, processorArchitecture=MSIL">
+      <HintPath>packages\Humanizer.Core.2.2.0\lib\netstandard1.0\Humanizer.dll</HintPath>
+    </Reference>
+    <Reference Include="IniFile">
+      <HintPath>lib\IniFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.Common.4.0.1\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.4.0.1\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.CSharp.Workspaces.4.0.1\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.VisualBasic.4.0.1\lib\netstandard2.0\Microsoft.CodeAnalysis.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic.Workspaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.VisualBasic.Workspaces.4.0.1\lib\netstandard2.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeAnalysis.Workspaces.Common.4.0.1\lib\netstandard2.0\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.XmlTransform, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Xdt.3.1.0\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
+    </Reference>
+    <Reference Include="ShipmentTransaction">
+      <HintPath>lib\ShipmentTransaction.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.5.0.0\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Composition.AttributedModel, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Composition.AttributedModel.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.AttributedModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Convention, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Composition.Convention.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.Convention.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Hosting, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Composition.Hosting.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Runtime, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Composition.Runtime.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts, Version=1.0.31.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Composition.TypedParts.1.0.31\lib\portable-net45+win8+wp8+wpa81\System.Composition.TypedParts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Configuration.ConfigurationManager.8.0.1\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Pipelines.5.0.1\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Reflection.Metadata.5.0.0\lib\net461\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encoding.CodePages.4.5.1\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ValidatorMigrationLogic">
+      <HintPath>lib\ValidatorMigrationLogic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CafeColorTable.cs" />
+    <Compile Include="CafeToolstripRenderer.cs" />
+    <Compile Include="ChooseSystemAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseWaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashBlockForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContactInfromation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomizeUserPrompts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomLabelProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlignmentOP900LL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntegrationDataGenerator.cs" />
+    <Compile Include="LegacyIntegrationLaunchLogic.cs" />
+    <Compile Include="IntegrationLauncher.cs" />
+    <Compile Include="FreightShipAlertPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PurgeNeededDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtdImagePromptDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermsAndConditionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkClientAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkClientUpgradeDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewSoftwareAvailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomsDocuments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocTabCommentsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocTabConfigDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DomFieldPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DomOtherPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DomPrefDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitTheSoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DomShipAlertPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FieldPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FreightFieldPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FreightOtherPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FreightPrefDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupShipPrefs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IntlFieldPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IntlOtherPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IntlPrefDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IntlShipAlertPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PassportOtherPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PassportPrefDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassportUpgradeDowngradePreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Profile_Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShipAlertPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TDFieldPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TDOtherPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TDPrefDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucDocTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PromptForGroundRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromptForSmartPostRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurgePromptDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurgingNowDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectMeterAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectNewMeterAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="SendandRecieveMessageToClientDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShellForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShippingProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShutdownDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseType.cs" />
+    <Compile Include="PurgeResponse.cs" />
+    <Compile Include="SystemSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPageException.cs" />
+    <Compile Include="ErrorException.cs" />
+    <Compile Include="SystemSettingsCustomerAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsExpressAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsGroundAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsIntegration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsLogging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UploadOverdueDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Integration\Data\CountryProfiles.cs" />
+    <Compile Include="Integration\Data\CountryProfile.cs" />
+    <Compile Include="Integration\Data\Offering.cs" />
+    <Compile Include="Integration\Data\Offerings.cs" />
+    <Compile Include="Integration\Data\OfferingSet.cs" />
+    <Compile Include="Integration\Data\Hazard\FieldListResponse.cs" />
+    <Compile Include="Integration\Data\Hazard\Fieldlist.cs" />
+    <Compile Include="Integration\Data\Hazard\Fieldgroup.cs" />
+    <Compile Include="Integration\Data\Hazard\Displaytext.cs" />
+    <Compile Include="Integration\Data\Hazard\Field.cs" />
+    <Compile Include="Integration\Data\Hazard\Potentialvalue.cs" />
+    <Compile Include="Integration\Data\Fields\AvailableFields.cs" />
+    <Compile Include="Integration\Data\Fields\Category.cs" />
+    <Compile Include="Integration\Data\Fields\IntegrationType.cs" />
+    <Compile Include="Integration\Data\Fields\HostLanguage.cs" />
+    <Compile Include="Integration\Data\Fields\HostType.cs" />
+    <Compile Include="Integration\Data\Fields\SourceType.cs" />
+    <Compile Include="Integration\Data\Fields\ODBCTypes.cs" />
+    <Compile Include="Integration\Data\Fields\CommandActivation.cs" />
+    <Compile Include="Integration\Data\Fields\CommandType.cs" />
+    <Compile Include="Integration\Data\Fields\ScreenType.cs" />
+    <Compile Include="Integration\Data\Fields\TableType.cs" />
+    <Compile Include="Integration\Data\Fields\FieldType.cs" />
+    <Compile Include="Integration\Data\Fields\EventType.cs" />
+    <Compile Include="Integration\Data\Fields\ConditionType.cs" />
+    <Compile Include="Integration\Data\Fields\MethodType.cs" />
+    <Compile Include="Integration\Data\Fields\HoldTableReleaseType.cs" />
+    <Compile Include="Integration\Data\Fields\HoldTableSortOrderType.cs" />
+    <Compile Include="Integration\Data\Fields\HoldTableReleaseOrderType.cs" />
+    <Compile Include="Integration\Data\Fields\QueryMethodType.cs" />
+    <Compile Include="Integration\Data\Fields\ConditionKeyType.cs" />
+    <Compile Include="Integration\Data\Fields\RefreshActionType.cs" />
+    <Compile Include="Integration\Data\Fields\MergeSeperatorType.cs" />
+    <Compile Include="Integration\Data\Fields\YesNoType.cs" />
+    <Compile Include="Integration\Data\Fields\Field.cs" />
+    <Compile Include="Integration\Data\Fields\Group.cs" />
+    <Compile Include="Integration\Data\Fields\Return.cs" />
+    <Compile Include="Integration\Data\Fields\Shipment.cs" />
+    <Compile Include="SmartPostConfiguration\SmartPostConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartPostConfiguration\SmartPostConfigurationUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Preferences\TDShipAlertPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx" />
+    <EmbeddedResource Include="CashBlockForm.resx" />
+    <EmbeddedResource Include="ChooseSystemAccount.resx" />
+    <EmbeddedResource Include="CloseWaitDialog.resx" />
+    <EmbeddedResource Include="ContactInfromation.resx" />
+    <EmbeddedResource Include="CustomizeUserPrompts.resx" />
+    <EmbeddedResource Include="CustomLabelProfiles.resx" />
+    <EmbeddedResource Include="CustomsDocuments.resx" />
+    <EmbeddedResource Include="DocTabCommentsDlg.resx" />
+    <EmbeddedResource Include="DocTabConfigDlg.resx" />
+    <EmbeddedResource Include="DomFieldPreferences.resx" />
+    <EmbeddedResource Include="DomOtherPreferences.resx" />
+    <EmbeddedResource Include="DomPrefDlg.resx" />
+    <EmbeddedResource Include="DomShipAlertPreferences.resx" />
+    <EmbeddedResource Include="EtdImagePromptDialog.resx" />
+    <EmbeddedResource Include="ExitTheSoftware.resx" />
+    <EmbeddedResource Include="FieldPreferences.resx" />
+    <EmbeddedResource Include="FormAlignmentOP900LL.resx" />
+    <EmbeddedResource Include="FreightFieldPreferences.resx" />
+    <EmbeddedResource Include="FreightOtherPreferences.resx" />
+    <EmbeddedResource Include="FreightPrefDlg.resx" />
+    <EmbeddedResource Include="FreightShipAlertPreferences.resx" />
+    <EmbeddedResource Include="GroupShipPrefs.resx" />
+    <EmbeddedResource Include="InstallHistory.resx" />
+    <EmbeddedResource Include="IntlFieldPreferences.resx" />
+    <EmbeddedResource Include="IntlOtherPreferences.resx" />
+    <EmbeddedResource Include="IntlPrefDlg.resx" />
+    <EmbeddedResource Include="IntlShipAlertPreferences.resx" />
+    <EmbeddedResource Include="LogInForm.resx" />
+    <EmbeddedResource Include="NetworkClientAdmin.resx" />
+    <EmbeddedResource Include="NetworkClientUpgradeDlg.resx" />
+    <EmbeddedResource Include="NewSoftwareAvailable.resx" />
+    <EmbeddedResource Include="OtherPreferences.resx" />
+    <EmbeddedResource Include="PassportOtherPreferences.resx" />
+    <EmbeddedResource Include="PassportPrefDlg.resx" />
+    <EmbeddedResource Include="PassportUpgradeDowngradePreferences.resx" />
+    <EmbeddedResource Include="Preferences\TDShipAlertPreferences.resx" />
+    <EmbeddedResource Include="Profile_Header.resx" />
+    <EmbeddedResource Include="PromptForGroundRange.resx" />
+    <EmbeddedResource Include="PromptForSmartPostRange.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="PurgeNeededDialog.resx" />
+    <EmbeddedResource Include="PurgePromptDlg.resx" />
+    <EmbeddedResource Include="PurgingNowDialog.resx" />
+    <EmbeddedResource Include="Resources\LogLevelDesc.htm" />
+    <EmbeddedResource Include="SelectMeterAccount.resx" />
+    <EmbeddedResource Include="SelectNewMeterAccount.resx" />
+    <EmbeddedResource Include="SendandRecieveMessageToClientDlg.resx" />
+    <EmbeddedResource Include="ShellForm.resx" />
+    <EmbeddedResource Include="ShipAlertPreferences.resx" />
+    <EmbeddedResource Include="ShippingProfiles.resx" />
+    <EmbeddedResource Include="ShutdownDlg.resx" />
+    <EmbeddedResource Include="SmartPostConfiguration\SmartPostConfigurationForm.resx" />
+    <EmbeddedResource Include="SmartPostConfiguration\SmartPostConfigurationUserControl.resx" />
+    <EmbeddedResource Include="SystemSettings.resx" />
+    <EmbeddedResource Include="SystemSettingsCustomerAdmin.resx" />
+    <EmbeddedResource Include="SystemSettingsExpressAdmin.resx" />
+    <EmbeddedResource Include="SystemSettingsGroundAdmin.resx" />
+    <EmbeddedResource Include="SystemSettingsIntegration.resx" />
+    <EmbeddedResource Include="SystemSettingsLogging.resx" />
+    <EmbeddedResource Include="SystemSettingsUser.resx" />
+    <EmbeddedResource Include="TDFieldPreferences.resx" />
+    <EmbeddedResource Include="TDOtherPreferences.resx" />
+    <EmbeddedResource Include="TDPrefDlg.resx" />
+    <EmbeddedResource Include="TermsAndConditionsDialog.resx" />
+    <EmbeddedResource Include="ucDocTab.resx" />
+    <EmbeddedResource Include="UploadOverdueDialog.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+    <Analyzer Include="packages\Puma.Security.Rules.2022.2.4.23\analyzers\dotnet\cs\Microsoft.Web.XmlTransform.dll" />
+    <Analyzer Include="packages\Puma.Security.Rules.2022.2.4.23\analyzers\dotnet\cs\Puma.Security.Rules.dll" />
+    <Analyzer Include="packages\SecurityCodeScan.VS2019.5.6.7\analyzers\dotnet\SecurityCodeScan.VS2019.dll" />
+    <Analyzer Include="packages\SecurityCodeScan.VS2019.5.6.7\analyzers\dotnet\YamlDotNet.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\build\Microsoft.CodeAnalysis.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\build\Microsoft.CodeAnalysis.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\build\Microsoft.CodeAnalysis.Analyzers.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\build\Microsoft.CodeAnalysis.Analyzers.targets'))" />
+  </Target>
+  <Import Project="packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\build\Microsoft.CodeAnalysis.Analyzers.targets" Condition="Exists('packages\Microsoft.CodeAnalysis.Analyzers.3.3.2\build\Microsoft.CodeAnalysis.Analyzers.targets')" />
+</Project>
